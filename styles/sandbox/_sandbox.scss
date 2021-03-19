@@ -58,3 +58,15 @@ $width in $cols {
 .circle-av {
   @include avatar(100px, $circle: true);
 }
+
+
+.btn {
+  width: 100px;
+  height: 40px;
+  &:hover{
+    background-color: #fff;
+  }
+  @media(min-width: 500px) {
+    columns: $base-color;
+  }
+}

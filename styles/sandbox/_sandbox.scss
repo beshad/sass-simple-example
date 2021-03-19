@@ -63,10 +63,15 @@ $width in $cols {
 .btn {
   width: 100px;
   height: 40px;
+  color: #fff;
+  &--danger {
+    @extend .btn;
+    color: red;
+  }
   &:hover{
     background-color: #fff;
   }
   @media(min-width: 500px) {
-    columns: $base-color;
+    color: $base-color;
   }
 }
